@@ -13,71 +13,10 @@
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%, -50%);	
+	display: flex;
 }
 
 .lcd > img
 {
-	width: 100%;
-	height: auto;
+	/* float: left; */
 } 
-
-#indicators
-{
-	width: 98%;
-	height: 95%;
-	position: absolute;
-	top: 4%;
-	left: 1%;
-}
-
-#topIndicators
-{
-	height: 15%;
-	float: left;
-}
-
-#topIndicators > img
-{
-	object-fit: contain;
-	height: 100%;
-}
-
-#centerIndicators
-{
-	/* display: table-cell; */
-	/* position: absolute; */
-	/* top: 25%; */
-	height: 70%;
-	/* width: 100%; */
-}
-
-.valueLine
-{
-	position: relative;
-	height: 45%;
-}
-
-.space
-{
-	height: 10%;
-}
-
-.valueLine img
-{
-	float:left;
-	height: 100%;
-}
-
-
-
-/* #firstRow */
-/* { */
-	/* position: relative; */
-	/* height: 100%; */
-/* } */
-
-/* #lcdIndicators > img */
-/* { */
-	/* position: absolute; */
-	/* height: 30%; */
-/* }  */
