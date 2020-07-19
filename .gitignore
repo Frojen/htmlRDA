@@ -1,0 +1,10 @@
+#Ignore projects work pice
+/lcd
+
+#Ignore images
+/*.png
+/*.jpg
+/*.psd
+
+#Ingnore PowerPoint failes
+/*.pptx
