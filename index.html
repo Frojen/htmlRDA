@@ -3,15 +3,104 @@
 	<head>
 		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="fontSize.js"></script> 
 	</head>
 	<body>
-		<div id="container">
-			<div class="lcd">
-				<img src="lcd/stereoOff.png">
-				<img src="lcd/monoOff.png">
-				<img src="lcd/signalOff.png">
-				<img src="lcd/valueOff.png">
-				<img src="lcd/valueBlock1.png">
+		<div id="background">
+			<img src="lcd/radio.png">
+			<div id="panels">
+				<div id="nameRadio">
+					RDA 5807M
+				</div>
+				<div id="container">
+					<img src="lcd/panel.png">
+					<div class="lcd">
+						<div class="row">
+							<img src="lcd/stereoOff.png">
+							<img src="lcd/monoOff.png">
+							<img src="lcd/signalOff.png">
+							
+							<div id="indicators">
+								<div id="indicatorsValue">
+									<img src="lcd/valueOff.png">
+									<img src="lcd/valueBlockOff1.png">
+									<img src="lcd/valueBlockOff2.png">
+									<img src="lcd/valueBlockOff3.png">
+									<img src="lcd/valueBlockOff4.png">
+									<img src="lcd/valueBlockOff5.png">
+									<img src="lcd/valueBlockOff6.png">
+									<img src="lcd/valueBlockOff7.png">
+								</div>
+								<div id="indicatorsVolume">
+									<img src="lcd/volumeOff.png">
+									<img src="lcd/volumeBlockOff1.png">
+									<img src="lcd/volumeBlockOff2.png">
+									<img src="lcd/volumeBlockOff3.png">
+									<img src="lcd/volumeBlockOff4.png">
+									<img src="lcd/volumeBlockOff5.png">
+									<img src="lcd/volumeBlockOff6.png">
+									<img src="lcd/volumeBlockOff7.png">
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="column">
+								<img src="lcd/reservOff.png">
+								<img src="lcd/fmOff.png">
+								<img src="lcd/rdsOff.png">
+							</div>
+							<div class="textPlace">
+								<img src="lcd/freqPlace.png">
+								<div id="freqPlace">
+									888.8
+								</div>
+								<div id="freqText">
+									<!-- –––.– -->
+								</div>
+							</div>
+							<div class="column">
+								<div class="textPlace">
+									<img src="lcd/rdsPlace.png">
+									<div id="rdsPlace">
+										888888888
+									</div>
+								</div>
+								<div class="textPlace">
+									<img src="lcd/memoryPlace.png">
+									<div id="memoryPlace">
+										Стр.8 Яч.8
+									</div>
+									<div id="memoryText">
+										<!-- Стр.– Яч.– -->
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="buttons">
+					<div class="buttonRow">
+						<button>1</button>
+						<button>2</button>
+						<button>3</button>
+						<button>АП</button>
+						<button id="powerButton"><img src="lcd/powerOff.png"></button>
+					</div>
+					<div class="buttonRow">
+						<button>4</button>
+						<button>5</button>
+						<button>6</button>
+						<button>–</button>
+						<button>+</button>
+					</div>
+					<div class="buttonRow">
+						<button>Стр</button>
+						<button><img src="lcd/previous.png"></button>
+						<button><img src="lcd/next.png"></button>
+						<button><img src="lcd/previousFreq.png"></button>
+						<button><img src="lcd/nextFreq.png"></button>
+					</div>
+				</div>
 			</div>
 		</div>
 	</body>

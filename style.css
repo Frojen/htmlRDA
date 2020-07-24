@@ -1,22 +1,212 @@
-#container
+@font-face
+{
+	font-family: "lcdFont";
+	src: url("font/17372.ttf");
+}
+
+body
+{
+	background: #EFEFF1;
+	display: flex;
+	justify-content: center;
+}
+
+#background
 {
 	position: relative;
-	width: 400px;
-	height: 500px;
-	background: gray;
+	max-width: 600px;
+	min-width: 500px;
+	width: 40%;
+}
+
+@media screen and (max-width: 500px) {
+	#background
+	{
+		width: 100%;
+		min-width: 200px;
+	}
+}
+
+#background > img
+{
+	width: 100%;
+}
+
+#panels
+{
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	top: 0;
+	text-align: center;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+}
+
+#container
+{
+	display:inline-block;
+	position: relative;
+	width: 81%;
+}
+
+#container > img
+{
+	display: block;
+	width: 100%;
+	height: auto;
 }
 
 .lcd
 {
-	position: relative;
-	width: 90%;
+	position: absolute;
+	width: 80%;
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%, -50%);	
+}
+
+.row
+{
+	width: 100%;
 	display: flex;
 }
 
-.lcd > img
+.row > img
 {
-	/* float: left; */
+	max-width: 100%;
+	height: auto;
 } 
+
+#indicatorsValue > img
+{
+	max-width: 100%;
+	height: auto;
+}
+
+#indicatorsVolume > img
+{
+	max-width: 100%;
+	height: auto;
+}
+
+#indicatorsValue, #indicatorsVolume
+{
+	display: flex;
+}
+
+/* #freqPlace */
+/* { */
+	/* display: flex; */
+/* } */
+
+.textPlace
+{
+	position: relative;
+}
+
+.textPlace > img
+{
+	display: flex;
+	max-width: 100%;
+	height: auto;
+}
+
+.column
+{
+	display: flex;
+	flex-direction: column;
+}
+
+.column > img
+{
+	max-width: 100%;
+	height: auto;
+}
+
+#rdsPlace, #memoryPlace, #memoryText
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	text-align: left;
+	width: 100%;
+	height: 100%;
+	font-size: 2vw;
+	font-family: "lcdFont";
+	color: #DE7026;
+}
+
+#freqPlace, #freqText
+{
+	position: absolute;
+	top: -5px;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	font-size: 5vw;
+	bottom: 50px;
+	text-align: center;
+	font-family: "lcdFont";
+	color: #DE7026;
+}
+
+#freqText, #memoryText
+{
+	color: #DE7026;
+	/* color: #430A02; */
+}
+
+#buttons
+{
+	width: 80%;
+	height: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	/* align-content: space-around; */
+}
+
+.buttonRow button
+{
+	border-radius: 5px;
+	color: #5F6364;
+	width: 13%;
+	display: flex;
+	font-weight: bold;
+	font-family: arial;
+	font-size: 120%;
+	justify-content: center;
+	align-items: center;
+}
+
+.buttonRow
+{
+	display: flex;
+	justify-content: space-around;
+	height: 18%;
+	/* align-content: space-around; */
+}
+
+#powerButton
+{
+	background-color: #0BA4DE;
+}
+
+.buttonRow button > img
+{
+	display: flex;
+	width: 65%;
+	justify-content: center;
+	
+}
+
+#nameRadio
+{
+	height: 8%;
+	font-weight: bold;
+	font-family: arial narrow;
+	color: #5F6364;
+}
