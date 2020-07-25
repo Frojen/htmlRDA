@@ -74,33 +74,33 @@ body
 	display: flex;
 }
 
-.row > img
+.row > div > img
 {
 	max-width: 100%;
 	height: auto;
 } 
 
-#indicatorsValue > img
+#indicatorsValue > div > img
 {
 	max-width: 100%;
 	height: auto;
 }
 
-#indicatorsVolume > img
-{
-	max-width: 100%;
-	height: auto;
-}
-
-#indicatorsValue, #indicatorsVolume
+#indicatorsValue > div, #indicatorsVolume > div
 {
 	display: flex;
 }
 
-/* #freqPlace */
-/* { */
-	/* display: flex; */
-/* } */
+#indicatorsVolume > div > img
+{
+	max-width: 100%;
+	height: auto;
+}
+
+#indicatorsValue, #indicatorsVolume, .rowDiv
+{
+	display: flex;
+}
 
 .textPlace
 {

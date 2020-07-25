@@ -9,6 +9,9 @@ function setFonts() {
 	fontToDiv("rdsPlace", 0.8);
 	fontToDiv("memoryPlace", 0.8);
 	fontToDiv("memoryText", 0.8);
+	
+	// var textYandex=document.getElementById("forYandex");
+	// textYandex.style.height="20px";
 }	
 
 function fontToDiv(divID, scale=1) {
